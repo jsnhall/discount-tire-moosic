@@ -1,0 +1,30 @@
+#masthead {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.90),
+      rgba(0, 0, 0, 0.90)
+    ), url('/images/grunge-texture-bg.jpg');
+  background-size: cover;
+  position: relative;
+  .masthead__wrapper {
+    background: url('/images/section-divider.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom -1px;
+    background-size: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: 992px) {
+      background-size: 50%;
+    }
+  }
+  h1 {
+    margin-bottom: 0;
+    font-size: 25vw;
+    @media screen and (min-width: 992px) {
+      font-size: 10vw;
+    }
+  }
+}

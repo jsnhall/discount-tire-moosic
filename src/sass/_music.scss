@@ -1,0 +1,9 @@
+.music-player__playback-button {
+  color: red;
+  font-size: 32px;
+  cursor: pointer;
+  transition: $transition-time;
+  &:hover {
+    color: $white;
+  }
+}
