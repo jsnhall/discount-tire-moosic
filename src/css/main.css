@@ -8,19 +8,122 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 section h2 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 3rem; }
 
 p, div, label, button, a, li, ol {
   font-family: 'Montserrat', sans-serif; }
 
-.py-section {
-  padding-top: 6rem;
-  padding-bottom: 6rem; }
+a {
+  color: #ff5252; }
+  a:hover {
+    color: #ffffff; }
+
+.btn {
+  transition: 0.25s;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 2px; }
+
+.btn__red {
+  border-color: #ff5252;
+  color: #ff5252; }
+  .btn__red:hover {
+    background: #ff5252;
+    color: #ffffff; }
+
+.btn__white {
+  border-color: #ffffff;
+  color: #ffffff; }
+  .btn__white:hover {
+    background: #ffffff;
+    color: #ff5252; }
+
+@media screen and (max-width: 767px) {
+  .card-deck {
+    flex-flow: column; } }
+
+.card-deck .card {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 2rem; }
+  .card-deck .card .card-body {
+    padding: 3rem 1.25rem;
+    text-align: center;
+    background: #000000; }
+    .card-deck .card .card-body .card-text {
+      margin: 1.25rem; }
+    .card-deck .card .card-body .card-price {
+      font-weight: 700;
+      font-size: 18px; }
+    .card-deck .card .card-body .btn {
+      margin-top: 1.5rem; }
+
+label {
+  text-transform: uppercase;
+  color: #e1e1e1;
+  font-size: 14px;
+  font-weight: 600; }
+
+.form-control {
+  border-radius: 0;
+  background: #1e1e1e;
+  border-color: #292929;
+  color: #ffffff;
+  height: calc(2.2em + .75rem + 2px); }
+  .form-control:focus {
+    background: #292929;
+    border-color: #000000;
+    color: #ffffff; }
+
+.section-wrapper {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  z-index: 1; }
+
+.divider-top {
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  .divider-top:after {
+    content: '';
+    background: url("/images/section-divider.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom -1px;
+    background-size: 100%;
+    transform: scale(-1);
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%; }
+    @media screen and (min-width: 992px) {
+      .divider-top:after {
+        background-size: 50%; } }
+
+.divider-bottom {
+  position: relative; }
+  .divider-bottom:before {
+    content: '';
+    background: url("/images/section-divider.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom -1px;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%; }
+    @media screen and (min-width: 992px) {
+      .divider-bottom:before {
+        background-size: 50%; } }
 
 header {
   position: fixed;
   width: 100%;
-  z-index: 1; }
+  z-index: 2; }
   @media screen and (min-width: 992px) {
     header nav {
       margin: 25px 0; } }
@@ -63,3 +166,17 @@ header {
   transition: 0.25s; }
   .music-player__playback-button:hover {
     color: #ffffff; }
+
+#tour-dates {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/crowd-at-concert.jpg");
+  background-size: cover;
+  background-position: bottom; }
+
+#merchandise {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/images/grunge-texture-bg.jpg");
+  background-size: cover; }
+
+footer {
+  background: #121212; }
+  footer small {
+    color: #e1e1e1; }
