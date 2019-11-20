@@ -3,11 +3,11 @@
     linear-gradient(
       rgba(0, 0, 0, 0.90),
       rgba(0, 0, 0, 0.90)
-    ), url('./images/grunge-texture-bg.jpg');
+    ), url('/images/grunge-texture-bg.jpg');
   background-size: cover;
   position: relative;
   .masthead__wrapper {
-    background: url('./images/section-divider.svg');
+    background: url('/images/section-divider.svg');
     background-repeat: no-repeat;
     background-position: left bottom -1px;
     background-size: 100%;
