@@ -115,7 +115,7 @@ label {
   flex-direction: column;
   &:after {
     content: '';
-    background: url('/images/section-divider.svg');
+    background: url('./images/section-divider.svg');
     background-repeat: no-repeat;
     background-position: left bottom -1px;
     background-size: 100%;
@@ -134,7 +134,7 @@ label {
   position: relative;
   &:before {
     content: '';
-    background: url('/images/section-divider.svg');
+    background: url('./images/section-divider.svg');
     background-repeat: no-repeat;
     background-position: left bottom -1px;
     background-size: 100%;
