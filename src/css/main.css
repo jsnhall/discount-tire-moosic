@@ -91,7 +91,7 @@ label {
   flex-direction: column; }
   .divider-top:after {
     content: '';
-    background: url("/images/section-divider.svg");
+    background: url("../images/section-divider.svg");
     background-repeat: no-repeat;
     background-position: left bottom -1px;
     background-size: 100%;
@@ -108,7 +108,7 @@ label {
   position: relative; }
   .divider-bottom:before {
     content: '';
-    background: url("/images/section-divider.svg");
+    background: url("../images/section-divider.svg");
     background-repeat: no-repeat;
     background-position: left bottom -1px;
     background-size: 100%;
@@ -136,11 +136,11 @@ header {
       color: #ff5252 !important; }
 
 #masthead {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/images/grunge-texture-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/grunge-texture-bg.jpg");
   background-size: cover;
   position: relative; }
   #masthead .masthead__wrapper {
-    background: url("/images/section-divider.svg");
+    background: url("../images/section-divider.svg");
     background-repeat: no-repeat;
     background-position: left bottom -1px;
     background-size: 100%;
@@ -168,12 +168,12 @@ header {
     color: #ffffff; }
 
 #tour-dates {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/crowd-at-concert.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/crowd-at-concert.jpg");
   background-size: cover;
   background-position: bottom; }
 
 #merchandise {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("/images/grunge-texture-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/grunge-texture-bg.jpg");
   background-size: cover; }
 
 footer {
