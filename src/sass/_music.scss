@@ -1,9 +1,64 @@
-.music-player__playback-button {
-  color: red;
-  font-size: 32px;
-  cursor: pointer;
-  transition: $transition-time;
-  &:hover {
-    color: $white;
+.music__layout {
+  display: flex;
+  .music__album-cover {
+    background: #292929;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    border-right: solid 2px #000 ;
+    img {
+      margin: 30px;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+  .music__item {
+    &:nth-child(odd) {
+      background: #292929;
+    }
+    &:nth-child(even) {
+      background: #1e1e1e;
+    }
+  }
+  .music__item, .music__wrapper--title-album-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .music__item {
+    padding: .75rem 1.5rem;
+    .music__wrapper--title-album-time {
+      width: 100%;
+      margin-right: 5rem;
+    }
+    .music__song-title, .music__song-time {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .music__song-title {
+      color: #fff;
+      margin-bottom: 0.25rem;
+    }
+    .music__song-album, .music__album {
+      color: #e1e1e1;
+    }
+    .music__album {
+      font-size: 12px;
+    }
+    .music__playback-button {
+      color: red;
+      font-size: 32px;
+      cursor: pointer;
+      transition: $transition-time;
+      &:hover {
+        color: $white;
+      }
+    }
   }
 }
