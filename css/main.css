@@ -270,6 +270,8 @@ header {
     border-radius: 0;
     border: none;
     background: #000000; }
+    #merchandise .card .card-img-top {
+      border-radius: 0; }
     #merchandise .card .card-body {
       padding: 3rem 1.25rem;
       text-align: center; }
@@ -288,7 +290,7 @@ header {
     width: 20px;
     margin: 10px;
     border: solid 2px #ffffff;
-    border-radius: 100%;
+    border-radius: 50px;
     background: #000000; }
   #merchandise .tns-nav-active {
     background: #ff5252 !important; }
