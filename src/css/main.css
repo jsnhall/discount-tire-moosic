@@ -293,6 +293,29 @@ header {
   #merchandise .tns-nav-active {
     background: #ff5252 !important; }
 
+#contact-us .social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  z-index: 2; }
+  @media screen and (min-width: 992px) {
+    #contact-us .social {
+      width: auto;
+      height: 100%;
+      margin: 0;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0; } }
+  #contact-us .social .social__links {
+    font-size: 28px;
+    margin: 0 3%;
+    text-align: center; }
+    @media screen and (min-width: 992px) {
+      #contact-us .social .social__links {
+        margin: 1rem 0 0 2rem; } }
+
 footer {
   background: #121212; }
   footer small {
