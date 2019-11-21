@@ -290,7 +290,7 @@ header {
     width: 20px;
     margin: 10px;
     border: solid 2px #ffffff;
-    border-radius: 50px;
+    border-radius: 50%;
     background: #000000; }
   #merchandise .tns-nav-active {
     background: #ff5252 !important; }
