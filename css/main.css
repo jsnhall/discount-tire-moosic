@@ -3,7 +3,7 @@ body, html {
   background: #000000;
   color: #ffffff; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .navbar-brand {
   font-family: 'Pirata One', cursive;
   text-transform: uppercase; }
 
@@ -42,26 +42,6 @@ a {
   .btn__white:hover {
     background: #ffffff;
     color: #ff5252; }
-
-@media screen and (max-width: 767px) {
-  .card-deck {
-    flex-flow: column; } }
-
-.card-deck .card {
-  border-radius: 0;
-  border: none;
-  margin-bottom: 2rem; }
-  .card-deck .card .card-body {
-    padding: 3rem 1.25rem;
-    text-align: center;
-    background: #000000; }
-    .card-deck .card .card-body .card-text {
-      margin: 1.25rem; }
-    .card-deck .card .card-body .card-price {
-      font-weight: 700;
-      font-size: 18px; }
-    .card-deck .card .card-body .btn {
-      margin-top: 1.5rem; }
 
 label {
   text-transform: uppercase;
@@ -124,16 +104,43 @@ header {
   position: fixed;
   width: 100%;
   z-index: 2; }
-  @media screen and (min-width: 992px) {
-    header nav {
-      margin: 25px 0; } }
-  header nav .nav-link {
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: auto 30px;
-    color: #ffffff !important; }
-    header nav .nav-link:hover {
-      color: #ff5252 !important; }
+  header .navbar {
+    padding: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.25s; }
+    @media screen and (min-width: 992px) {
+      header .navbar {
+        background: none;
+        padding: 25px 0; } }
+    header .navbar .navbar-brand {
+      padding-left: 15px; }
+      @media screen and (min-width: 992px) {
+        header .navbar .navbar-brand {
+          display: none; } }
+    @media screen and (max-width: 991px) {
+      header .navbar .navbar-nav {
+        padding: 40px 0;
+        text-align: center; } }
+    header .navbar .nav-link {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: auto 30px;
+      color: #ffffff !important; }
+      header .navbar .nav-link:hover {
+        color: #ff5252 !important; }
+      @media screen and (max-width: 991px) {
+        header .navbar .nav-link {
+          padding: 1rem; } }
+    @media screen and (max-width: 992px) {
+      header .navbar .hamburger {
+        display: flex; } }
+    header .navbar .hamburger-inner, header .navbar .hamburger-inner:after, header .navbar .hamburger-inner:before, header .navbar .hamburger.is-active .hamburger-inner, header .navbar .hamburger.is-active .hamburger-inner:after, header .navbar .hamburger.is-active .hamburger-inner:before {
+      background-color: #ff5252; }
+    header .navbar button {
+      outline: none; }
+  header .navbar-scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.25s; }
 
 #masthead {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/grunge-texture-bg.jpg");
@@ -159,22 +166,155 @@ header {
       #masthead h1 {
         font-size: 10vw; } }
 
-.music-player__playback-button {
-  color: red;
-  font-size: 32px;
-  cursor: pointer;
-  transition: 0.25s; }
-  .music-player__playback-button:hover {
+@media screen and (min-width: 992px) {
+  #new-music .music__layout {
+    display: flex; } }
+
+#new-music .music__layout .music__album-cover {
+  background: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px #000000;
+  padding: 30px; }
+  @media screen and (min-width: 992px) {
+    #new-music .music__layout .music__album-cover {
+      border-right: solid 1px #000000;
+      border-bottom: none; } }
+
+#new-music .music__layout ul {
+  flex: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#new-music .music__layout .music__item, #new-music .music__layout .music__wrapper--title-album-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#new-music .music__layout .music__item {
+  padding: .75rem 1.5rem; }
+  #new-music .music__layout .music__item:nth-child(odd) {
+    background: #292929; }
+  #new-music .music__layout .music__item:nth-child(even) {
+    background: #1e1e1e; }
+  #new-music .music__layout .music__item .music__wrapper--title-album-time {
+    width: 100%;
+    margin-right: 2rem; }
+    @media screen and (min-width: 992px) {
+      #new-music .music__layout .music__item .music__wrapper--title-album-time {
+        margin-right: 5rem; } }
+  #new-music .music__layout .music__item .music__song-title, #new-music .music__layout .music__item .music__song-time {
+    font-size: 14px;
+    font-weight: 600;
     color: #ffffff; }
+  #new-music .music__layout .music__item .music__song-title {
+    color: #ffffff;
+    margin-bottom: 0.25rem; }
+  #new-music .music__layout .music__item .music__song-album, #new-music .music__layout .music__item .music__album {
+    color: gray4; }
+  #new-music .music__layout .music__item .music__album {
+    font-size: 12px; }
+  #new-music .music__layout .music__item .music__playback-button {
+    color: #ff5252;
+    font-size: 32px;
+    cursor: pointer;
+    transition: 0.25s; }
+    #new-music .music__layout .music__item .music__playback-button:hover {
+      color: #ffffff; }
 
 #tour-dates {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/crowd-at-concert.jpg");
   background-size: cover;
   background-position: bottom; }
+  #tour-dates .tour__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    #tour-dates .tour__list .tour__item {
+      text-align: center;
+      margin-bottom: 2.5rem; }
+      #tour-dates .tour__list .tour__item:last-child {
+        margin-bottom: 0; }
+      @media screen and (min-width: 992px) {
+        #tour-dates .tour__list .tour__item {
+          margin-bottom: 0;
+          text-align: left;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 0;
+          border-bottom: solid 1px #e1e1e1; }
+          #tour-dates .tour__list .tour__item:first-child {
+            border-top: solid 1px #e1e1e1; } }
+      #tour-dates .tour__list .tour__item .tour__wrapper-date-title-location {
+        flex: auto; }
+      #tour-dates .tour__list .tour__item .tour__date, #tour-dates .tour__list .tour__item .tour__title, #tour-dates .tour__list .tour__item .tour__location {
+        margin-bottom: 0.5rem; }
+        @media screen and (min-width: 992px) {
+          #tour-dates .tour__list .tour__item .tour__date, #tour-dates .tour__list .tour__item .tour__title, #tour-dates .tour__list .tour__item .tour__location {
+            margin-bottom: 0;
+            display: inline-block;
+            width: 30%; } }
+      #tour-dates .tour__list .tour__item .tour__btn-group {
+        margin-top: 1rem; }
+        @media screen and (min-width: 992px) {
+          #tour-dates .tour__list .tour__item .tour__btn-group {
+            margin-top: 0; } }
 
 #merchandise {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/grunge-texture-bg.jpg");
   background-size: cover; }
+  #merchandise .card {
+    border-radius: 0;
+    border: none;
+    background: #000000; }
+    #merchandise .card .card-body {
+      padding: 3rem 1.25rem;
+      text-align: center; }
+      #merchandise .card .card-body .card-text {
+        margin: 1.25rem 0; }
+      #merchandise .card .card-body .card-price {
+        font-weight: 700;
+        font-size: 18px; }
+      #merchandise .card .card-body .btn {
+        margin-top: 1.5rem; }
+  #merchandise .tns-nav {
+    text-align: center;
+    margin: 1rem 0 2rem 0; }
+  #merchandise .tns-outer [aria-controls] {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    border: solid 2px #ffffff;
+    border-radius: 100%;
+    background: #000000; }
+  #merchandise .tns-nav-active {
+    background: #ff5252 !important; }
+
+#contact-us .social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  z-index: 2; }
+  @media screen and (min-width: 992px) {
+    #contact-us .social {
+      width: auto;
+      height: 100%;
+      margin: 0;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0; } }
+  #contact-us .social .social__links {
+    font-size: 28px;
+    margin: 0 3%;
+    text-align: center; }
+    @media screen and (min-width: 992px) {
+      #contact-us .social .social__links {
+        margin: 1rem 0 0 2rem; } }
 
 footer {
   background: #121212; }
