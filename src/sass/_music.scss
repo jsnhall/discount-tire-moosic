@@ -1,67 +1,69 @@
-.music__layout {
-  @media screen and (min-width: 992px) {
-    display: flex; 
-  }
-  .music__album-cover {
-    background: #292929;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: solid 2px #000 ;
-    padding: 30px;
+#new-music {
+  .music__layout {
     @media screen and (min-width: 992px) {
-      border-right: solid 2px #000 ;
-      border-bottom: none;
+      display: flex; 
     }
-  }
-  ul {
-    flex: auto;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .music__item, .music__wrapper--title-album-time {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .music__item {
-    padding: .75rem 1.5rem;
-    &:nth-child(odd) {
-      background: #292929;
-    }
-    &:nth-child(even) {
-      background: #1e1e1e;
-    }
-    .music__wrapper--title-album-time {
-      width: 100%;
-      margin-right: 2rem;
+    .music__album-cover {
+      background: $gray3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: solid 2px $black ;
+      padding: 30px;
       @media screen and (min-width: 992px) {
-        margin-right: 5rem;
+        border-right: solid 2px $black ;
+        border-bottom: none;
       }
     }
-    .music__song-title, .music__song-time {
-      font-size: 14px;
-      font-weight: 600;
-      color: #fff;
+    ul {
+      flex: auto;
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
-    .music__song-title {
-      color: #fff;
-      margin-bottom: 0.25rem;
+    .music__item, .music__wrapper--title-album-time {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    .music__song-album, .music__album {
-      color: #e1e1e1;
-    }
-    .music__album {
-      font-size: 12px;
-    }
-    .music__playback-button {
-      color: red;
-      font-size: 32px;
-      cursor: pointer;
-      transition: $transition-time;
-      &:hover {
+    .music__item {
+      padding: .75rem 1.5rem;
+      &:nth-child(odd) {
+        background: $gray3;
+      }
+      &:nth-child(even) {
+        background: $gray2;
+      }
+      .music__wrapper--title-album-time {
+        width: 100%;
+        margin-right: 2rem;
+        @media screen and (min-width: 992px) {
+          margin-right: 5rem;
+        }
+      }
+      .music__song-title, .music__song-time {
+        font-size: 14px;
+        font-weight: 600;
         color: $white;
+      }
+      .music__song-title {
+        color: $white;
+        margin-bottom: 0.25rem;
+      }
+      .music__song-album, .music__album {
+        color: gray4;
+      }
+      .music__album {
+        font-size: 12px;
+      }
+      .music__playback-button {
+        color: $red;
+        font-size: 32px;
+        cursor: pointer;
+        transition: $transition-time;
+        &:hover {
+          color: $white;
+        }
       }
     }
   }
