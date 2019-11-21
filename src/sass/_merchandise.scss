@@ -5,4 +5,38 @@
       rgba(0, 0, 0, 0.90)
     ), url('../images/grunge-texture-bg.jpg');
   background-size: cover;
+  .card {
+    border-radius: 0;
+    border: none;
+    background: $black;
+    .card-body {
+      padding: 3rem 1.25rem;
+      text-align: center;
+      .card-text {
+        margin: 1.25rem 0;
+      }
+      .card-price {
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .btn {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+  .tns-nav {
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+  }
+  .tns-outer [aria-controls] {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    border: solid 2px $white;
+    border-radius: 100%;
+    background: $black;
+  }
+  .tns-nav-active {
+    background: $red !important;
+  }
 }

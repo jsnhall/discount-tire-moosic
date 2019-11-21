@@ -43,26 +43,6 @@ a {
     background: #ffffff;
     color: #ff5252; }
 
-@media screen and (max-width: 767px) {
-  .card-deck {
-    flex-flow: column; } }
-
-.card-deck .card {
-  border-radius: 0;
-  border: none;
-  margin-bottom: 2rem; }
-  .card-deck .card .card-body {
-    padding: 3rem 1.25rem;
-    text-align: center;
-    background: #000000; }
-    .card-deck .card .card-body .card-text {
-      margin: 1.25rem; }
-    .card-deck .card .card-body .card-price {
-      font-weight: 700;
-      font-size: 18px; }
-    .card-deck .card .card-body .btn {
-      margin-top: 1.5rem; }
-
 label {
   text-transform: uppercase;
   color: #e1e1e1;
@@ -259,6 +239,32 @@ header {
 #merchandise {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/grunge-texture-bg.jpg");
   background-size: cover; }
+  #merchandise .card {
+    border-radius: 0;
+    border: none;
+    background: #000000; }
+    #merchandise .card .card-body {
+      padding: 3rem 1.25rem;
+      text-align: center; }
+      #merchandise .card .card-body .card-text {
+        margin: 1.25rem 0; }
+      #merchandise .card .card-body .card-price {
+        font-weight: 700;
+        font-size: 18px; }
+      #merchandise .card .card-body .btn {
+        margin-top: 1.5rem; }
+  #merchandise .tns-nav {
+    text-align: center;
+    margin: 1rem 0 2rem 0; }
+  #merchandise .tns-outer [aria-controls] {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    border: solid 2px #ffffff;
+    border-radius: 100%;
+    background: #000000; }
+  #merchandise .tns-nav-active {
+    background: #ff5252 !important; }
 
 footer {
   background: #121212; }

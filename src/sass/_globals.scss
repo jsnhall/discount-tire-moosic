@@ -54,35 +54,6 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .card-deck {
-    flex-flow: column;
-  }
-}
-
-.card-deck {
-  .card {
-    border-radius: 0;
-    border: none;
-    margin-bottom: 2rem;
-    .card-body {
-      padding: 3rem 1.25rem;
-      text-align: center;
-      background: $black;
-      .card-text {
-        margin: 1.25rem;
-      }
-      .card-price {
-        font-weight: 700;
-        font-size: 18px;
-      }
-      .btn {
-        margin-top: 1.5rem;
-      }
-    }
-  }
-}
-
 label {
   text-transform: uppercase;
   color: $gray4;
