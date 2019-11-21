@@ -6,4 +6,46 @@
     ), url('../images/crowd-at-concert.jpg');
   background-size: cover;
   background-position: bottom;
+  .tour__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .tour__item {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: 992px) {
+        margin-bottom: 0;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: solid 1px $gray4;
+        &:first-child {
+          border-top: solid 1px $gray4;
+        }
+      }
+      .tour__wrapper-date-title-location {
+        flex: auto;
+      }
+      .tour__date, .tour__title, .tour__location {
+        margin-bottom: 0.5rem;
+        @media screen and (min-width: 992px) {
+          margin-bottom: 0;
+          display: inline-block;
+          width: 30%;
+        }
+      }
+      .tour__btn-group {
+        margin-top: 1rem;
+        @media screen and (min-width: 992px) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
+

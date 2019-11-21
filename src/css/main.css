@@ -221,6 +221,40 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/crowd-at-concert.jpg");
   background-size: cover;
   background-position: bottom; }
+  #tour-dates .tour__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    #tour-dates .tour__list .tour__item {
+      text-align: center;
+      margin-bottom: 2.5rem; }
+      #tour-dates .tour__list .tour__item:last-child {
+        margin-bottom: 0; }
+      @media screen and (min-width: 992px) {
+        #tour-dates .tour__list .tour__item {
+          margin-bottom: 0;
+          text-align: left;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 0;
+          border-bottom: solid 1px #e1e1e1; }
+          #tour-dates .tour__list .tour__item:first-child {
+            border-top: solid 1px #e1e1e1; } }
+      #tour-dates .tour__list .tour__item .tour__wrapper-date-title-location {
+        flex: auto; }
+      #tour-dates .tour__list .tour__item .tour__date, #tour-dates .tour__list .tour__item .tour__title, #tour-dates .tour__list .tour__item .tour__location {
+        margin-bottom: 0.5rem; }
+        @media screen and (min-width: 992px) {
+          #tour-dates .tour__list .tour__item .tour__date, #tour-dates .tour__list .tour__item .tour__title, #tour-dates .tour__list .tour__item .tour__location {
+            margin-bottom: 0;
+            display: inline-block;
+            width: 30%; } }
+      #tour-dates .tour__list .tour__item .tour__btn-group {
+        margin-top: 1rem; }
+        @media screen and (min-width: 992px) {
+          #tour-dates .tour__list .tour__item .tour__btn-group {
+            margin-top: 0; } }
 
 #merchandise {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/grunge-texture-bg.jpg");
