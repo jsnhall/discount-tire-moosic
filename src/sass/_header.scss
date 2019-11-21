@@ -2,10 +2,25 @@ header {
   position: fixed;
   width: 100%;
   z-index: 2;
-
-  nav {
+  .navbar {
+    padding: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: $transition-time;
     @media screen and (min-width: 992px) {
-      margin: 25px 0;
+      background: none;
+      padding: 25px 0;
+    }
+    .navbar-brand {
+      padding-left: 15px;
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+    }
+    .navbar-nav {
+      @media screen and (max-width: 991px) {
+        padding: 40px 0;
+        text-align: center;
+      }
     }
     .nav-link {
       font-weight: 700;
@@ -15,6 +30,24 @@ header {
       &:hover {
         color: $red !important;
       }
+      @media screen and (max-width: 991px) {
+        padding: 1rem;
+      }
     }
+    .hamburger {
+      @media screen and (max-width: 992px) {
+        display: flex;
+      }
+    }
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+      background-color: #ff5252;
+    }
+    button {
+      outline: none;
+    }
+  }
+  .navbar-scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    transition: $transition-time;
   }
 }

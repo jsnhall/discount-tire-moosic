@@ -3,7 +3,7 @@ body, html {
   background: #000000;
   color: #ffffff; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .navbar-brand {
   font-family: 'Pirata One', cursive;
   text-transform: uppercase; }
 
@@ -104,16 +104,43 @@ header {
   position: fixed;
   width: 100%;
   z-index: 2; }
-  @media screen and (min-width: 992px) {
-    header nav {
-      margin: 25px 0; } }
-  header nav .nav-link {
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: auto 30px;
-    color: #ffffff !important; }
-    header nav .nav-link:hover {
-      color: #ff5252 !important; }
+  header .navbar {
+    padding: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.25s; }
+    @media screen and (min-width: 992px) {
+      header .navbar {
+        background: none;
+        padding: 25px 0; } }
+    header .navbar .navbar-brand {
+      padding-left: 15px; }
+      @media screen and (min-width: 992px) {
+        header .navbar .navbar-brand {
+          display: none; } }
+    @media screen and (max-width: 991px) {
+      header .navbar .navbar-nav {
+        padding: 40px 0;
+        text-align: center; } }
+    header .navbar .nav-link {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: auto 30px;
+      color: #ffffff !important; }
+      header .navbar .nav-link:hover {
+        color: #ff5252 !important; }
+      @media screen and (max-width: 991px) {
+        header .navbar .nav-link {
+          padding: 1rem; } }
+    @media screen and (max-width: 992px) {
+      header .navbar .hamburger {
+        display: flex; } }
+    header .navbar .hamburger-inner, header .navbar .hamburger-inner:after, header .navbar .hamburger-inner:before, header .navbar .hamburger.is-active .hamburger-inner, header .navbar .hamburger.is-active .hamburger-inner:after, header .navbar .hamburger.is-active .hamburger-inner:before {
+      background-color: #ff5252; }
+    header .navbar button {
+      outline: none; }
+  header .navbar-scrolled {
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.25s; }
 
 #masthead {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../images/grunge-texture-bg.jpg");
