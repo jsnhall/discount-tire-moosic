@@ -9,6 +9,9 @@
     border-radius: 0;
     border: none;
     background: $black;
+    .card-img-top {
+      border-radius: 0;
+    }
     .card-body {
       padding: 3rem 1.25rem;
       text-align: center;
@@ -33,7 +36,7 @@
     width: 20px;
     margin: 10px;
     border: solid 2px $white;
-    border-radius: 100%;
+    border-radius: 50px;
     background: $black;
   }
   .tns-nav-active {
