@@ -38,10 +38,6 @@ elMusic.addEventListener('click', (e) => {
     // Toggle playback buttons
     e.target.classList.toggle('fa-pause-circle');
     e.target.classList.toggle('fa-play-circle');
-
-    // Set countdown
-    const parent = e.target.parentNode;
-    trackDuration = parent.children[0].children[1].innerHTML;     
     
     // Check state of player - paused or playing
     if (e.target.classList.contains('fa-pause-circle')) {
