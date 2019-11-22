@@ -1,13 +1,13 @@
 const elMusic = document.querySelector('.music__list');
 const elPlaybackBtns = document.querySelectorAll('.music__playback-button');
 const songs = [
-  '/music/Fire_Breather.mp3',
-  '/music/In_the_Shadows.mp3',
-  '/music/Jupiter_One.mp3',
-  '/music/Please_Tell_Me.mp3',
-  '/music/Reckless_Shred.mp3',
-  '/music/Spots_Action.mp3',
-  '/music/The_Fiery_Furnace.mp3',
+  './music/Fire_Breather.mp3',
+  './music/In_the_Shadows.mp3',
+  './music/Jupiter_One.mp3',
+  './music/Please_Tell_Me.mp3',
+  './music/Reckless_Shred.mp3',
+  './music/Spots_Action.mp3',
+  './music/The_Fiery_Furnace.mp3',
 ];
 let trackNumber;
 let audioElement = new Audio();
