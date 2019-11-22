@@ -58,6 +58,11 @@ exports.default = async () => {
     .pipe(gulp.dest('./'))
 }
 
+exports.default = async () => {
+  gulp.src('./src/music/*')
+    .pipe(gulp.dest('./music'))
+}
+
 gulp.task('watch', function() {
   gulp.watch('./src/sass/**/*.scss', gulp.series('sass'));
 });
