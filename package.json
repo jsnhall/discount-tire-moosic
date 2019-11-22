@@ -17,9 +17,16 @@
   },
   "homepage": "https://github.com/jsnhall/discount-tire-moosic#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0"
   },
   "dependencies": {
-    "gulp-sass": "^4.0.2"
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
   }
 }
