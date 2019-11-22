@@ -65,7 +65,7 @@
                     <div class="music__song-title">You Don’t Really Love Me</div>
                     <div class="music__album">Moosic - Mootal Heartbreak</div>
                   </div>
-                  <div class="music__song-time">1:57</div>
+                  <div class="music__song-time">3:50</div>
                 </div>
                 <i class="fas fa-play-circle music__playback-button" tabindex="0" data-trackNumber="1"></i>
               </li>
@@ -348,50 +348,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
-  <script type="module">
-    var slider = tns({
-      "container": ".merch-slider",
-      "items": 1,
-      "slideBy": "page",
-      "mouseDrag": true,
-      "swipeAngle": false,
-      "speed": 400,
-      "gutter": 20,
-      "navPosition": "bottom",
-      "controls": false,
-      "responsive": {
-        "992": {
-          "items": 3,
-        },
-        "768": {
-          "items": 2,
-        }
-      },
-    });
-  </script>
-
-  <script>
-    /* Hamburger animation */
-    $('.hamburger').click(function() {
-      $(this).toggleClass('is-active');
-    })
-
-    /* Navigation styling on-scroll */
-    let scrollPosition = 0;
-    let elNavbar = document.querySelector('.navbar');
-
-    window.addEventListener('scroll', function(e) {
-      scrollPosition = window.scrollY;
-
-      if (scrollPosition > 200 && !elNavbar.classList.contains('navbar-scrolled')) {
-        elNavbar.classList.add('navbar-scrolled');
-      } else if (scrollPosition <= 199 && elNavbar.classList.contains('navbar-scrolled')) {
-        elNavbar.classList.remove('navbar-scrolled');
-      } else {
-        return false;
-      }
-    });
-  </script>
+  <script src="./js/nav.js"></script>
   <script src="./js/music.js"></script>
+  <script src="./js/cards.js"></script>
 </body>
 </html>
